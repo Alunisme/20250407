@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>113下學期程式設計期中報告</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+  </head>
+
+  <body>
+    <!-- 新增選單容器 -->
+    <div class="menu-container">
+      <ul class="menu">
+        <li><a href="#home">首頁</a></li>
+        <li><a href="#" id="about-trigger">自我介紹</a></li>
+        <li>
+          <a href="#portfolio">作品集</a>
+          <!-- 子選單 -->
+          <ul class="submenu">
+            <li><a href="#" class="modal-trigger" data-url="https://alunisme.github.io/20250303/">第一周作業</a></li>
+            <li><a href="#" class="modal-trigger" data-url="https://alunisme.github.io/test20250310/">第二周作業</a></li>
+            <li><a href="#" class="modal-trigger" data-url="https://alunisme.github.io/20250317/">第三周作業</a></li>
+            <li><a href="#" class="modal-trigger" data-url="https://alunisme.github.io/20250324/">第四周作業</a></li>
+            <li><a href="#" class="modal-trigger" data-url="https://www.et.tku.edu.tw/">第五周作業</a></li>
+          </ul>
+        </li>
+        <li><a href="#" id="quiz-trigger">測驗卷</a></li>
+        <li><a href="#videos">教學影片</a></li>
+      </ul>
+    </div>
+
+    <!-- 彈出視窗 -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <iframe id="modal-iframe" src="" frameborder="0"></iframe>
+      </div>
+    </div>
+
+    <!-- 自我介紹的彈出視窗 -->
+    <div id="about-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <p>你好，我叫伍阿呆，這邊是我的期中報告呦</p>
+        <p>你好，我叫伍阿呆，這邊是我的期中報告呦</p>
+        <p>你好，我叫伍阿呆，這邊是我的期中報告呦</p>
+      </div>
+    </div>
+
+    <script src="sketch.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
